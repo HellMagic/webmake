@@ -1,5 +1,13 @@
 #! /usr/bin/env node
-console.log('start...');
-const prepack = require('../lib/preprocess/prepack');
 
-prepack();
+const createServer = require('../lib/server/index');
+
+const [command] = process.argv.slice(2);
+
+switch (command) {
+    case 'serve':
+        createServer();
+        break;
+    default:
+        console.log(`未能匹配到命令：${command}`);
+}

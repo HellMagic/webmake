@@ -1,0 +1,58 @@
+doctype html
+html
+    head
+        title 小象零售系统
+        //- meta(charset="utf-8")
+        //- meta(name="viewport" content="width=device-width, initial-scale=1")
+        //- meta(name="lx:category" content="chaoshi")
+        //- meta(name="lx:appnm" content="mall_m")
+        //- meta(name="lx:autopv" content="off")
+        //- link(rel="shortcut icon" href="https://s3plus.meituan.net/v1/mss_915cfe67c99b4651b81ca210670f9302/mall-fe-files/favicon.ico")
+        script(type="module" src="/@vite/client")
+    body
+        //- script.
+        //-     (function() {
+        //-         function getMsid() {
+        //-             const cookies = document.cookie
+        //-             .split('; ')
+        //-             .filter(v => v)
+        //-             .reduce((prev, cur) => {
+        //-                 const [k, v] = cur.split('=');
+        //-                 prev[k] = decodeURIComponent(v);
+        //-                 return prev;
+        //-             }, {});
+        //-             return cookies['msid'];
+        //-         }
+        //-         function getAppkey() {
+        //-             const pathname = window.location.pathname;
+        //-             let appkey = 'com.sankuai.mall.fe.pc';
+        //-             if (pathname && pathname.includes('-alias')) {
+        //-                 const result = pathname.match(/^\/(\w+)-alias/);
+        //-                 if (result && result[1]) {
+        //-                     appkey = `com.sankuai.mall.fe.${result[1]}`;
+        //-                 }
+        //-             }
+        //-             return appkey;
+        //-         }
+        //-         window.__locals__ = window.__locals__ || {
+        //-             appKey : getAppkey(),
+        //-             misName: getMsid()
+        //-         };
+        //-     })()
+        div(id="app")
+            div(class="el-loading-mask is-fullscreen" style="display: block;")
+                div(class="el-loading-spinner")
+                    svg(viewBox="25 25 50 50" class="circular")
+                        circle( cx="50" cy="50" r="20" fill="none" class="path")
+                    p(class="el-loading-text") 正在加载
+        
+        //- script(src="https://s3plus.meituan.net/v1/mss_ba5ca639f87144c9a21b820a7389f95e/maicai-static-resource/static/js/owlCollector.js")
+        //- script(src="https://s3plus.meituan.net/v1/mss_ba5ca639f87144c9a21b820a7389f95e/maicai-static-resource/static/js/event-emitter.production.js")
+        
+        //- script(src="https://s3.meituan.net/v1/mss_eb9ea9cfff9840198c3ae909b17b4270/production/logan-websdk/logan_2.1.1.js")
+        //- script(src="https://s3plus.meituan.net/v1/mss_ba5ca639f87144c9a21b820a7389f95e/maicai-static-resource/static/js/vendor.production.js")
+
+        //- script.
+        //-     window.vendorSDK.init({owl: {devMode: true,disableCache:true,logan:{enable:true,Logan:Logan,config:{devMode:true}}}})
+
+        script(type="module")!= entryScript
