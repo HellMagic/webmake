@@ -4,3 +4,4 @@ mock-server/
 .temp/
 app/
 play/
+.DS_Store
