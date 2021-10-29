@@ -5,3 +5,4 @@ mock-server/
 app/
 play/
 .DS_Store
+.vscode/

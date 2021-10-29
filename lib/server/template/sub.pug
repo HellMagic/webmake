@@ -8,7 +8,8 @@ html
         //- meta(name="lx:appnm" content="mall_m")
         //- meta(name="lx:autopv" content="off")
         //- link(rel="shortcut icon" href="https://s3plus.meituan.net/v1/mss_915cfe67c99b4651b81ca210670f9302/mall-fe-files/favicon.ico")
-        script(type="module" src="/@vite/client")
+        if isDev
+            script(type="module" src="/@vite/client")
     body
         //- script.
         //-     (function() {
